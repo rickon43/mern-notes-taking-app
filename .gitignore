@@ -1,0 +1,17 @@
+node_modules
+
+.env*
+
+dist
+ 
+.quasar
+
+*.log
+
+*.tsbuildinfo
+
+*.keystore
+
+.DS_Store
+
+deploy-*.sh
