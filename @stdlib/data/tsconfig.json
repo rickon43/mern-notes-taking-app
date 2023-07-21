@@ -1,0 +1,31 @@
+{
+  "extends": "tsconfig/base.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+
+    "rootDir": "src",
+    "outDir": "dist",
+
+    "paths": {
+      "src/*": ["src/*"],
+
+      "@stdlib/*": ["../../../packages/@stdlib/*/src"]
+    }
+  },
+
+  "references": [
+    { "path": "../../../packages/@stdlib/base64/tsconfig.json" },
+    { "path": "../../../packages/@stdlib/misc/tsconfig.json" }
+  ],
+
+  "include": ["src/**/*.ts"],
+
+  "tsc-alias": {
+    "replacers": {
+      "base-url": {
+        "enabled": false
+      }
+    }
+  }
+}
